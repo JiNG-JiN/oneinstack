@@ -533,9 +533,9 @@ checkDownload() {
     src_url=${mirror_link}/oneinstack/src/libzip-${libzip_ver}.tar.gz && Download_src
   elif [ "${php_option}" == '12' ] || [ "${mphp_ver}" == '82' ]; then
     src_url=https://secure.php.net/distributions/php-${php82_ver}.tar.gz && Download_src
-    src_url=${mirror_link}/oneinstack/src/argon2-${argon2_ver}.tar.gz && Download_src
-    src_url=${mirror_link}/oneinstack/src/libsodium-${libsodium_ver}.tar.gz && Download_src
-    src_url=${mirror_link}/oneinstack/src/libzip-${libzip_ver}.tar.gz && Download_src
+    src_url=${mirror_link}/argon2-${argon2_ver}.tar.gz && Download_src
+    src_url=${mirror_link}/libsodium-${libsodium_ver}.tar.gz && Download_src
+    src_url=${mirror_link}/libzip-${libzip_ver}.tar.gz && Download_src
   fi
 
   # PHP OPCache
