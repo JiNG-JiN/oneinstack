@@ -101,7 +101,7 @@ Install_PHP82() {
     --with-config-file-scan-dir=${php_install_dir}/etc/php.d \
     --with-apxs2=${apache_install_dir}/bin/apxs ${phpcache_arg} --disable-fileinfo \
     --enable-mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd \
-    --with-iconv=/usr/local --with-freetype --with-jpeg --with-zlib \
+    --with-iconv=/usr/local --with-freetype --with-jpeg --with-zlib --with-webp \
     --enable-xml --disable-rpath --enable-bcmath --enable-shmop --enable-exif \
     --enable-sysvsem ${php82_with_curl} --enable-mbregex \
     --enable-mbstring --with-password-argon2 --with-sodium=/usr/local --enable-gd ${php82_with_openssl} \
@@ -112,7 +112,7 @@ Install_PHP82() {
     --with-config-file-scan-dir=${php_install_dir}/etc/php.d \
     --with-fpm-user=${run_user} --with-fpm-group=${run_group} --enable-fpm ${phpcache_arg} --disable-fileinfo \
     --enable-mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd \
-    --with-iconv=/usr/local --with-freetype --with-jpeg --with-zlib \
+    --with-iconv=/usr/local --with-freetype --with-jpeg --with-zlib  --with-webp \
     --enable-xml --disable-rpath --enable-bcmath --enable-shmop --enable-exif \
     --enable-sysvsem ${php82_with_curl} --enable-mbregex \
     --enable-mbstring --with-password-argon2 --with-sodium=/usr/local --enable-gd ${php82_with_openssl} \

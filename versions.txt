@@ -49,7 +49,7 @@ php73_ver=7.3.33
 php74_ver=7.4.33
 php80_ver=8.0.30
 php81_ver=8.1.24
-php82_ver=8.2.11
+php82_ver=8.2.13
 
 # Nodejs
 nodejs_ver=18.18.0
