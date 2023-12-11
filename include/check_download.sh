@@ -611,7 +611,7 @@ checkDownload() {
   # imageMagick
   if [ "${pecl_imagick}" == '1' ]; then
     echo "Download ImageMagick..."
-    src_url=${mirror_link}/oneinstack/src/ImageMagick-${imagemagick_ver}.tar.gz && Download_src
+    src_url=https://pecl.php.net/get/ImageMagick-${imagemagick_ver}.tar.gz  && Download_src
     echo "Download imagick..."
     if [[ "${php_option}" =~ ^1$ ]]; then
       src_url=https://pecl.php.net/get/imagick-${imagick_oldver}.tgz && Download_src
