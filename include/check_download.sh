@@ -483,7 +483,7 @@ checkDownload() {
   # PHP
   if [[ "${php_option}" =~ ^[1-9]$|^1[0-2]$ ]] || [[ "${mphp_ver}" =~ ^5[3-6]$|^7[0-4]$|^8[0-2]$ ]]; then
     echo "PHP common..."
-    src_url=${mirror_link}/oneinstack/src/libiconv-${libiconv_ver}.tar.gz && Download_src
+    src_url="libiconv-${libiconv_ver}.tar.gz" && Download_src
     src_url=https://curl.haxx.se/download/curl-${curl_ver}.tar.gz && Download_src
     src_url=https://downloads.sourceforge.net/project/mhash/mhash/${mhash_ver}/mhash-${mhash_ver}.tar.gz && Download_src
     src_url=https://downloads.sourceforge.net/project/mcrypt/Libmcrypt/${libmcrypt_ver}/libmcrypt-${libmcrypt_ver}.tar.gz && Download_src
@@ -533,9 +533,9 @@ checkDownload() {
     src_url=${mirror_link}/oneinstack/src/libzip-${libzip_ver}.tar.gz && Download_src
   elif [ "${php_option}" == '12' ] || [ "${mphp_ver}" == '82' ]; then
     src_url=https://secure.php.net/distributions/php-${php82_ver}.tar.gz && Download_src
-    src_url=${mirror_link}/argon2-${argon2_ver}.tar.gz && Download_src
-    src_url=${mirror_link}/libsodium-${libsodium_ver}.tar.gz && Download_src
-    src_url=${mirror_link}/libzip-${libzip_ver}.tar.gz && Download_src
+    src_url="phc-winner-argon2-${argon2_ver}.tar.gz" && Download_src
+    src_url=libsodium-${libsodium_ver}.tar.gz && Download_src
+    src_url=libzip-${libzip_ver}.tar.gz && Download_src
   fi
 
   # PHP OPCache
